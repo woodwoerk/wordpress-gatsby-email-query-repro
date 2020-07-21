@@ -20,6 +20,9 @@ module.exports = {
     {
       resolve: `gatsby-source-wordpress-experimental`,
       options: {
+        html: {
+          useGatsbyImage: false,
+        },
         url:
           process.env.WPGRAPHQL_URL ||
           `https://dev-gatsby-source-wordpress-v4.pantheonsite.io/graphql`,
